@@ -5,29 +5,9 @@ function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: '/indexPage/index.view.html',
-            controller: 'indexCtrl'
-
-        })
-        .when('/mobile/read', {
-            templateUrl: '/mobilesListPage/mobilesList.view.html',
-            controller: 'mobilesListCtrl'
-        })
-        .when('/mobile/create', {
-            templateUrl: '/createPage/create.view.html',
-            controller: 'createCtrl'
-        })
-        .when('/mobile/update', {
-            templateUrl: '/updatePage/update.view.html',
-            controller: 'updateCtrl'
-        })
-        .when('/mobile/delete', {
-            templateUrl: '/deletePage/delete.view.html',
-            controller: 'deleteCtrl'
-        })
-        .when('/mobile/:mobileid', {
-            templateUrl: '/mobileInfoPage/mobileInfo.view.html',
-            controller: 'mobilesInfoCtrl',
+            controller: 'indexCtrl',
             controllerAs: 'vm'
+
         })
         .otherwise({
             redirectTo: '/'

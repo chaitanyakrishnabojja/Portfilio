@@ -1,0 +1,25 @@
+<div class="modal-content">
+    <form id="addReview" name="addReview" role="form" class="form-horizontal" ng-submit="vm.onSubmit()">
+        <div class="modal-header">
+            <h4 id="myModalLabel" class="modal-title">College Database Project</h4>
+            <button type="button" ng-click="vm.modal.cancel()" class="close btn-danger"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            
+            <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/SQL_Projects/tree/master/College_Database" target="_blank">https://github.com/chaitanyakrishnabojja/SQL_Projects/tree/master/College_Database</a></p>
+                
+            
+            <p>• Developed a college database in 3NF and the Database contents are as follows</p>
+            <p>• A college contains many departments. Each department can offer any number of courses</p>
+            <p>• Many instructors can work in a department, but an instructor can work only in one department</p>
+            <p>• For each department, there is a head, and an instructor can be head of only one department</p>
+            <p>• Each instructor can take any number of courses, and a course can be taken by only one instructor</p>
+            <p>• A student can enrol for any number of courses and each course can have any number of students</p>
+            
+
+        </div>
+        <div class="modal-footer">
+            <button ng-click="vm.modal.cancel()" type="button" class="btn btn-danger">Close</button>
+        </div>
+    </form>
+</div>

@@ -4,232 +4,99 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobiles App</title>
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <title>Chaitanya Krishna Bojja - Portfolio</title>
+        
+   
 
-    <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="/css/slick.css" />
-    <link type="text/css" rel="stylesheet" href="/css/slick-theme.css" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-    <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="/css/nouislider.min.css" />
-
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <!-- Custom styles for this template -->
+    <link href="/css/resume.min.css" rel="stylesheet">
 </head>
 
-<body>
-
-    <!-- HEADER -->
-    <header>
-        <!-- TOP HEADER -->
-        <div id="top-header">
-            <div class="container">
-                <ul class="header-links pull-left">
-                    <li><a href="#"><i class="fa fa-phone"></i> +1 519-781-8233</a></li>
-                    <li><a href="#"><i class="fa fa-envelope-o"></i> chaitu966743@gmail.com</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i> 123 XYZ STREET , On Ca</a></li>
-                </ul>
-                <ul class="header-links pull-right">
-                    <li><a href="#"><i class="fa fa-dollar"></i> CAD</a></li>
-                </ul>
-            </div>
+<body id="page-top">
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Chaitanya Krishna Bojja</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skill Set</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+            </ul>
         </div>
-        <!-- /TOP HEADER -->
-
-        <!-- MAIN HEADER -->
-        <div id="header">
-            <!-- container -->
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <!-- LOGO -->
-                    <div class="col-md-12">
-                        <div class="header-logo">
-                            <a href="#" class="logo">
-									<img src="./img/logo.png" style="height: 65px" alt="">
-								</a>
-                        </div>
-                    </div>
-                    <!-- /LOGO -->
-   					<div class="col-md-3 clearfix">
-							<div class="header-ctn">
-
-                    <!-- Menu Toogle -->
-                    <div class="menu-toggle">
-                        <a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-                    </div>
-                    <!-- /Menu Toogle -->
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- NAVIGATION -->
-    <nav id="navigation">
-        <!-- container -->
-        <div class="container">
-            <!-- responsive-nav -->
-            <div id="responsive-nav">
-                <!-- NAV -->
-                <ul class="main-nav nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/mobile/read">Mobiles List</a></li>
-                    <li><a href="/mobile/create">Create Mobile</a></li>
-                    <li><a href="/mobile/update">Update Mobile</a></li>
-                    <li><a href="/mobile/delete">Delete Mobile</a></li>
-                </ul>
-                <!-- /NAV -->
-            </div>
-            <!-- /responsive-nav -->
-        </div>
-        <!-- /container -->
     </nav>
-    <!-- /NAVIGATION -->
-
-    <div class="section">
-        <!-- container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row" ng-view>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
+    
+    <div ng-view></div>
 
 
-    <!-- FOOTER -->
-    <footer id="footer">
-        <!-- top footer -->
-        <div class="section">
-            <!-- container -->
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-title">About Us</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                            <ul class="footer-links">
-                                <li><a href="#"><i class="fa fa-map-marker"></i>123 XYZ STREET , On Ca</a></li>
-                                <li><a href="#"><i class="fa fa-phone"></i>+1 519-781-8233</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i> chaitu966743@gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-title">Categories</h3>
-                            <ul class="footer-links">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/mobile/read">Mobiles List</a></li>
-                                <li><a href="/mobile/create">Create Mobile</a></li>
-                                <li><a href="/mobile/update">Update Mobile</a></li>
-                                <li><a href="/mobile/delete">Delete Mobile</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="clearfix visible-xs"></div>
-
-                    <div class="col-md-3 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-title">Information</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Orders and Returns</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-title">Service</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">View Cart</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Track My Order</a></li>
-                                <li><a href="#">Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /row -->
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /top footer -->
-
-        <!-- bottom footer -->
-        <div id="bottom-footer" class="section">
-            <div class="container">
-                <!-- row -->
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <span class="copyright">
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="" target="_blank">MoCell</a>
-							</span>
-                    </div>
-                </div>
-                <!-- /row -->
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /bottom footer -->
-    </footer>
     <!-- /FOOTER -->
+        <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- jQuery Plugins -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/jquery.zoom.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/resume.min.js"></script>
+
+<!--
 
     <script src="/javascripts/jquery-1.11.1.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+-->
     <script src="/angular/angular.js"></script>
     <script src="/lib/angular-route.min.js"></script>
-    <script src="/lib/ui-bootstrap-custom-2.5.0.min.js"></script>
+<!--    <script src="/lib/ui-bootstrap-custom-2.5.0.min.js"></script>-->
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
     <script src="/myApp.js"></script>
     <script src="/indexPage/indexCtrl.controller.js"></script>
-    <script src="/mobilesListPage/mobilesListCtrl.controller.js"></script>
-    <script src="/createPage/createCtrl.controller.js"></script>
-    <script src="/updatePage/updateCtrl.controller.js"></script>
-    <script src="/deletePage/deleteCtrl.controller.js"></script>
-    <script src="/mobileInfoPage/mobilesInfoCtrl.controller.js"></script>
-    <script src="/reviewModal/reviewModal.controller.js"></script>
-    <script src="/services/getMobilesList.js"></script>
-    <script src="/services/addMobile.js"></script>
-    <script src="/services/updateMobileService.js"></script>
-    <script src="/services/deleteMobileService.js"></script>
-    <script src="/services/getMobileByIdService.js"></script>
-    <script src="/services/addReviewService.js"></script>
-    <script src="/directives/ratingStars/ratingStars.directive.js"></script>
-
+    <script src="/zietGeistModal/zietGeistModal.controller.js"></script>
+    <script src="/calculatorModal/calculatorModal.controller.js"></script>
+    <script src="/wackAmoleModal/wackAmoleModal.controller.js"></script>
+    <script src="/hotelReservationModal/hotelReservationModal.controller.js"></script>
+    <script src="/carsWithManufacturersModal/carsWithManufacturersModal.controller.js"></script>
+    <script src="/moCellModal/moCellModal.controller.js"></script>
+    <script src="/getYourTAAngularModal/getYourTAAngularModal.controller.js"></script>
+    <script src="/worldMapModal/worldMapModal.controller.js"></script>
+    <script src="/collegeDBModal/collegeDBModal.controller.js"></script>
+    <script src="/hotelDBModal/hotelDBModal.controller.js"></script>
+    <script src="/getYourTAAspNetModal/getYourTAAspNetModal.controller.js"></script>
+    <script src="/sevenElevenModal/sevenElevenModal.controller.js"></script>
+    <script src="/buyAndSellHomesModal/buyAndSellHomesModal.controller.js"></script>
+    
 </body>
 
 

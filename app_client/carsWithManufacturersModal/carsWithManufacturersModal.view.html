@@ -1,0 +1,24 @@
+<div class="modal-content">
+    <form id="addReview" name="addReview" role="form" class="form-horizontal" ng-submit="vm.onSubmit()">
+        <div class="modal-header">
+            <h4 id="myModalLabel" class="modal-title">Cars With Manufacturers Application</h4>
+            <button type="button" ng-click="vm.modal.cancel()" class="close btn-danger"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white";>Open Project website</span></a></p>
+            <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/MEAN-Cars-Api-App" target="_blank">https://github.com/chaitanyakrishnabojja/MEAN-Cars-Api-App</a></p>
+            <p>• Developed an Angular application using AngularJS, this application allows the users to get the list of car manufacturers for a given year, I used the cars API to get the list. when the user enters the year in the header part of the application and “Get Manufacturers!” button is pressed, list of manufactures will be displayed along with Make Name, Make ID, Manufacturer ID, Manufacturer Name</p>
+            <p>• Users can also filter the Make Name’s using the Filter Results. Users can also filter the manufacturers list by using check boxes on the left</p>
+            <p>• When any of the Make Name is clicked from the list, all the models for that Make Name will be displayed on the right hand side of the webpage</p>
+            <p>• The total, available and booked rooms count will change based on the user bookings• We can also filter the model names using the right side filter</p>
+            <p>• The filtered count will be displayed at the top</p>
+            <p>• The check boxes count will change based on the year selected in header part</p>
+            <p>• Used Angular Services to get the JSON data from the cars API</p>
+
+
+        </div>
+        <div class="modal-footer">
+            <button ng-click="vm.modal.cancel()" type="button" class="btn btn-danger">Close</button>
+        </div>
+    </form>
+</div>
