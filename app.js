@@ -3,10 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('./app_api/models/db');
+//require('./app_api/models/db');
 
 
-var routesApi = require('./app_api/routes/index');
+//var routesApi = require('./app_api/routes/index');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'app_client')));
 
 //app.use('/', indexRouter);
 //app.use('/users', usersRouter);
-app.use('/api', routesApi);
+//app.use('/api', routesApi);
 
 app.use(function(req, res) {
     res.sendfile(path.join(__dirname, 'app_client', 'index.html'));
