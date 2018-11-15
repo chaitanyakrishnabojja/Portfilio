@@ -1,21 +1,92 @@
 <div class="modal-content">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+</style>
+
     <form id="addReview" name="addReview" role="form" class="form-horizontal" ng-submit="vm.onSubmit()">
         <div class="modal-header">
             <h4 id="myModalLabel" class="modal-title">MoCell Application</h4>
             <button type="button" ng-click="vm.modal.cancel()" class="close btn-danger"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         </div>
         <div class="modal-body">
-            
-            <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white";>Open Project website</span></a>
-            <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/MEAN_MoCell_App" target="_blank"><span style="color: blue">https://github.com/chaitanyakrishnabojja/MEAN_MoCell_App</span></a></p>
-            
-            <p>• MoCell data-driven web application using Node.js, Express, AngularJS and MongoDB</p>
-            <p>• It is a fully functioning Angular web application in which I’ve used all layers of the MEAN stack to create MoCell</p>
-            <p>• I have also included Bootstrap to create a responsive layout. MoCell will list all the products in categories (mobile, laptops and accessories), where people can use all the CRUD (create, read, update, and delete) for a single category</p>
-            <p>• It will also display Product name, Price, description, and a rating for each product</p>
-            <p>• Users will be able to submit ratings and reviews</p>
-            <p>• I designed and developed API’s to make service requests to my MongoDB Database</p>
-            <p>• I used Single Page Application (SPA) to develop this application</p>
+
+            <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white" ;>Open Project website</span></a>
+                <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/MEAN_MoCell_App" target="_blank"><span style="color: blue">https://github.com/chaitanyakrishnabojja/MEAN_MoCell_App</span></a></p>
+
+                <div>
+
+                    <hr />
+                    <div class="w3-content w3-display-container" style="max-width: 550px">
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/mocell/mocell1.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/mocell/mocell2.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/mocell/mocell3.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/mocell/mocell6.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/mocell/mocell7.png" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                          showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          if (n > x.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = x.length}
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                          }
+                          x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+
+
+
+
+
+                    <hr />
+
+                </div>
+
+
+
+                <p>• MoCell data-driven web application using Node.js, Express, AngularJS and MongoDB</p>
+                <p>• It is a fully functioning Angular web application in which I’ve used all layers of the MEAN stack to create MoCell</p>
+                <p>• I have also included Bootstrap to create a responsive layout. MoCell will list all the products in categories (mobile, laptops and accessories), where people can use all the CRUD (create, read, update, and delete) for a single category</p>
+                <p>• It will also display Product name, Price, description, and a rating for each product</p>
+                <p>• Users will be able to submit ratings and reviews</p>
+                <p>• I designed and developed API’s to make service requests to my MongoDB Database</p>
+                <p>• I used Single Page Application (SPA) to develop this application</p>
 
 
         </div>
