@@ -1,4 +1,10 @@
 <div class="modal-content">
+    
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+</style>
+    
     <form id="addReview" name="addReview" role="form" class="form-horizontal" ng-submit="vm.onSubmit()">
         <div class="modal-header">
             <h4 id="myModalLabel" class="modal-title">Calculator Project</h4>
@@ -8,10 +14,56 @@
 
             <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white";>Open Project website</span></a>
             <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/JavaScript-projects/tree/master/JavaScriptCalculator" target="_blank"><span style="color: blue">https://github.com/chaitanyakrishnabojja/JavaScript-projects/tree/master/JavaScriptCalculator</span></a></p>
+            
+            
+            <div>
+
+                    <hr />
+                    <div class="w3-content w3-display-container" style="max-width: 550px">
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/calculator/calculator.png" style="width:100%">
+
+                        </div>
+
+
+<!--
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+-->
+
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                          showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          if (n > x.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = x.length}
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                          }
+                          x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+
+
+
+
+
+                    <hr />
+
+                </div>
 
             <p>• Implemented calculator with all the functionalities using JavaScript and jQuery</p>
             <p>• Used javaScript variables, arrays, objects to develop this project</p>
-            <p>• The pages in this site looks good in mobile, tablet or Desktops.</p>
             <p>• Used JavaScript functions and Event Listeners in this project</p>
 
 

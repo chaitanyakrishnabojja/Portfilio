@@ -1,4 +1,10 @@
 <div class="modal-content">
+    
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+</style>
+    
     <form id="addReview" name="addReview" role="form" class="form-horizontal" ng-submit="vm.onSubmit()">
         <div class="modal-header">
             <h4 id="myModalLabel" class="modal-title">Get Your TA Application</h4>
@@ -6,9 +12,73 @@
         </div>
         <div class="modal-body">
             
-            <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white";>Open Project website</span></a>
+<!--            <p><a href="https://mocell-app.herokuapp.com/" target="_blank" class="btn btn-primary"><span style="color: white";>Open Project website</span></a>-->
             
             <p>Git Hub Link: <a href="https://github.com/chaitanyakrishnabojja/Asp.Net-Get_Your_TA" target="_blank"><span style="color: blue">https://github.com/chaitanyakrishnabojja/Asp.Net-Get_Your_TA</span></a></p>
+            
+            
+            <div>
+
+                    <hr />
+                    <div class="w3-content w3-display-container" style="max-width: 550px">
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/asp/gta1.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/asp/gta2.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/asp/gta3.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/asp/gta4.png" style="width:100%">
+
+                        </div>
+
+                        <div class="w3-display-container mySlides">
+                            <img src="/img/asp/gta5.png" style="width:100%">
+
+                        </div>
+
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                          showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                          var i;
+                          var x = document.getElementsByClassName("mySlides");
+                          if (n > x.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = x.length}
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                          }
+                          x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
+
+
+
+
+
+                    <hr />
+
+                </div>
                 
             
             <p>• Developed a “Get Your TA” application using Asp.Net</p>
